@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training TR-102</title>
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('ml.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #333;
+    }
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, #de14bc, #1005da);
+        padding: 10px 20px;
+        color: #fff;
+        border-radius: 40px 40px 40px 40px;
+    }
+    header img {
+        height: 50px;
+        margin: 5px 0;
+        max-width: 100%;
+        border-radius: 35px;
+    }
+    header .home-button {
+        background-color: #8a1480;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        /* border-radius: px; */
+        text-decoration: none;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    header .home-button:hover {
+        background-color: #000000;
+    }
+    nav {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    nav a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:#568dd3;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 2000px;
+        margin: 5px;
+        transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+        background-color: rgb(23, 22, 22);
+    }
+    .section {
+        display: none;
+    }
+    .section.active {
+        display: block;
+    }
+    h1, h2, p {
+        text-align: center;
+    }
+    .pdf-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .pdf-container iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    .gallery {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .gallery img {
+        width: 100%;
+        display: none;
+        transition: opacity 1s ease-in-out;
+    }
+    .gallery img.active {
+        display: block;
+        opacity: 1;
+    }
+    .gallery .caption {
+        text-align: center;
+        margin-top: 10px;
+        color: #2c3e50;
+        font-size: 16px;
+        display: none;
+    }
+    .gallery .caption.active {
+        display: block;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        background: linear-gradient(to right, #de14bc, #1005da);
+        color: #fff;
+        border-radius: 40px 40px 40px 40px;
+    }
+    footer a {
+        color: #c9e1f0;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: center;
+        }
+        header .home-button {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+        header img {
+            height: 40px;
+        }
+        .pdf-container iframe {
+            height: 400px;
+        }
+        .gallery img {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="https://www.gndec.ac.in/">
+            <img src="gndec.jpg" alt="GNDEC Logo"></a>
+            <a href="#" class="home-button" onclick="showSection('home')">Home</a>
+            <a href="https://www.cmeri.res.in/CMERI-Ludhiana">
+                <img src="csir.jpg" alt="CSIR Logo"></a>
+        </header>
+        
+
+        <section id="home" class="section active">
+            <h1>Training TR-102 Report</h1>
+            <p>By Manisha Gupta, URN:-2203496 <br> Guru Nanak Dev Engineering College Ludhiana</p>
+            <h2>4 Week Training at <br> CSIR-CMERI, Ludhiana</h2>
+        </section>
+        <nav>
+            <a href="#" onclick="showSection('day1')">Day 1</a>
+            <a href="#" onclick="showSection('day2')">Day 2</a>
+            <a href="#" onclick="showSection('day3')">Day 3</a>
+            <a href="#" onclick="showSection('day4')">Day 4</a>
+            <a href="#" onclick="showSection('day5')">Day 5</a>
+            <a href="#" onclick="showSection('day6')">Day 6</a>
+            <a href="#" onclick="showSection('day7')">Day 7</a>
+            <a href="#" onclick="showSection('day8')">Day 8</a>
+            <a href="#" onclick="showSection('day9')">Day 9</a>
+            <a href="#" onclick="showSection('day10')">Day 10</a>
+            <a href="#" onclick="showSection('day11')">Day 11</a>
+            <a href="#" onclick="showSection('day12')">Day 12</a>
+            <a href="#" onclick="showSection('day13')">Day 13</a>
+            <a href="#" onclick="showSection('day14')">Day 14</a>
+            <a href="#" onclick="showSection('day15')">Day 15</a>
+            <a href="#" onclick="showSection('day16')">Day 16</a>
+            <a href="#" onclick="showSection('day17')">Day 17</a>
+            <a href="#" onclick="showSection('day18')">Day 18</a>
+            
+        </nav>
+        <section id="day1" class="section">
+            <h1>Training Report Day-1</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day1.pdf"></iframe>
+            
+            </div>
+        </section>
+
+        <section id="day2" class="section">
+            <h1>Training Report Day 2</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day2.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day3" class="section">
+            <h1>Training Report Day 3</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day3.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day4" class="section">
+            <h1>Training Report Day 4</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day4.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day5" class="section">
+            <h1>Training Report Day 5</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day5.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day6" class="section">
+            <h1>Training Report Day 6</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day6.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day7" class="section">
+            <h1>Training Report Day 7</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day7.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day8" class="section">
+            <h1>Training Report Day 8</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day8.pdf"></iframe>
+                </iframe> -->
+            </div>
+        </section>
+
+        <section id="day9" class="section">
+            <h1>Training Report Day 9</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day9.pdf"></iframe>
+              
+            </div>
+        </section>
+
+        <section id="day10" class="section">
+            <h1>Training Report Day 10</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day10.pdf"></iframe>
+               
+        </section>
+
+        <section id="day11" class="section">
+            <h1>Training Report Day 11</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day11.pdf"></iframe>
+               
+            </div>
+        </section>
+
+        <section id="day12" class="section">
+            <h1>Training Report Day 12</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day12.pdf"></iframe>
+                
+        </div>
+        </section>
+        <section id="day13" class="section">
+            <h1>Training Report Day 13</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day13.pdf"></iframe>
+                
+        </div>
+        </section>
+        <section id="day14" class="section">
+            <h1>Training Report Day 14</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day14.pdf"></iframe>
+                
+        </div>
+        </section>
+        <section id="day15" class="section">
+            <h1>Training Report Day 15</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day15.pdf"></iframe>
+                
+        </div>
+        </section>
+        <section id="day16" class="section">
+            <h1>Training Report Day 16</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day16.pdf"></iframe>
+                
+        </div>
+        <section id="day17" class="section">
+            <h1>Training Report Day 17</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day17.pdf"></iframe>
+                
+        </div>
+        </section>
+        <section id="day18" class="section">
+            <h1>Training Report Day 18</h1>
+            <div class="pdf-container">
+                <iframe src="https://manisha628490gupta-lu.github.io/Training-102-Report/Day18.pdf"></iframe>
+                
+       
+
+
+        <footer>
+           <a href="https://www.linkedin.com/in/manishagupta-25aa6b281/"> © Manisha Gupta</a>
+        </footer>
+    </div>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.gallery img');
+        const captions = document.querySelectorAll('.gallery .caption');
+
+        function showSlide(index) {
+            images.forEach((img, i) => {
+                img.classList.remove('active');
+                captions[i].style.display = 'none';
+            });
+            images[index].classList.add('active');
+            captions[index].style.display = 'block';
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 4000); 
+    </script>  
+</body>
+</html>
